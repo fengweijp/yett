@@ -163,12 +163,12 @@ If you need `IE 9/10` compatibility, you will have to use a [polyfill](https://g
 
 #### Add a type attribute manually
 
-> Needed for targetting `Microsoft Edge`! Adding this property also prevents the script from loading on `Chrome`, `Safari` and `Firefox`.
+> Needed for targetting `Microsoft Edge & Internet Explorer`! Adding this property also prevents the script from loading on `Chrome`, `Safari` and `Firefox`.
 
-In order to prevent the execution of the script for `Edge` users, you will have to add `type="javascript/blocked"` manually as shown in the example below.
+In order to prevent the execution of the script for `Edge` and `IE` users, you will have to add `type="javascript/blocked"` manually as shown in the example below.
 
 ```html
-<!-- Add type="javascript/blocked" yourself, otherwise it will "only" work on Chrome/Firefox/Safari/IE -->
+<!-- Add type="javascript/blocked" yourself, otherwise it will "only" work on Chrome/Firefox/Safari -->
 <script src="..." type="javascript/blocked"></script>
 ```
 
